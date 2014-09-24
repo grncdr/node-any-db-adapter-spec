@@ -267,6 +267,8 @@ Users can check it when building queries, for example:
 var sql = 'SELECT * FROM test WHERE foo = '+adapter.namedParameterPrefix+'param1';
 ```
 
+Only adapters that do support named parameters should provide this property.
+
 ### Adapter.positionalParameterMarker
 
 Read-only string used for positional parameters in SQL queries, e.g., '?'.
@@ -274,6 +276,8 @@ Read-only string used for positional parameters in SQL queries, e.g., '?'.
 ```javascript
 var sql = 'SELECT * FROM test WHERE foo = '+adapter.positionalParameterMarker;
 ```
+
+Only adapters that do support positional parameters should provide this property.
 
 ### Adapter.createConnection
 
