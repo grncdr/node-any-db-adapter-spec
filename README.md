@@ -22,7 +22,7 @@ implement.
 ```ocaml
 Queryable := EventEmitter & {
   adapter: Adapter
-  query:   (text: String, params: Array?, Continuation<Results>?) => Query
+  query:   (text: String, params: Array? | Object?, Continuation<Results>?) => Query
   query:   (Query) => Query
 }
 ```
@@ -40,13 +40,16 @@ The [Adapter][] instance that will be used by this `Queryable` for creating
 ### Queryable.query
 
 ```ocaml
-(text: String, params: Array?, Continuation<ResultSet>?) => Query
+(text: String, params: Array? | Object?, Continuation<ResultSet>?) => Query
 (Query) => Query
 ```
 
 Execute a SQL statement using bound parameters (if they are provided) and
 return a [Query][] object that is a [Readable][] stream of the resulting
-rows. If a `Continuation<Results>` is provided the rows returned by the
+rows. If parameters are Array, they are used as positional parameters,
+if they are Object, they are used as named parameters (where object key is
+a name, and object value is parameter value).
+If a `Continuation<Results>` is provided the rows returned by the
 database will be aggregated into a [ResultSet][] which will be passed to the
 continuation after the query has completed.
 
@@ -139,7 +142,7 @@ No arguments are passed to event listeners.
 ```ocaml
 Query := Readable<Object> & {
   text: String,
-  values: Array,
+  values: Array | Object,
   callback: null | (Error, Results) => void
 }
 ```
@@ -163,7 +166,8 @@ interpolated values *after* the query has been enqueued by a connection.
 
 ### Query.values
 
-The array of parameter values.
+The array of parameter values, if parameters in query.text are positional,
+or object of parameter names and values, if paremeters in query.text are named.
 
 ### Query.callback
 
@@ -243,7 +247,7 @@ it is not supported by Postgres itself.
 Adapter: {
   name:             String
   createConnection: (Object, Continuation<Connection>?) => Connection,
-  createQuery:      (String, Array?, Continuation<Results>?) => Query,
+  createQuery:      (String, Array? | Object?, Continuation<Results>?) => Query,
 }
 ```
 
@@ -253,6 +257,23 @@ need to interact with this API directly.
 ### Adapter.name
 
 The string name of the adapter, e.g. `'mysql'`, `'postgres'` or `'sqlite3'`.
+
+### Adapter.namedParameterPrefix
+
+Read-only string used as a prefix for named parameters in SQL queries, e.g., ':'.
+Users can check it when building queries, for example:
+
+```javascript
+var sql = 'SELECT * FROM test WHERE foo = '+adapter.namedParameterPrefix+'param1';
+```
+
+### Adapter.positionalParameterMarker
+
+Read-only string used for positional parameters in SQL queries, e.g., '?'.
+
+```javascript
+var sql = 'SELECT * FROM test WHERE foo = '+adapter.positionalParameterMarker;
+```
 
 ### Adapter.createConnection
 
@@ -269,7 +290,7 @@ See also: the [Connection API](#connection)
 ### Adapter.createQuery
 
 ```ocaml
-(text: String, params: Array?, Continuation<ResultSet>?) => Query
+(text: String, params: Array? | Object?, Continuation<ResultSet>?) => Query
 (Query) => Query {* returns same Query *}
 ```
 
