@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Any DB Spec</title><style>*{box-sizing:border-box}.cxs-display-table{display:table}.cxs-183745076 pre .hljs-params{color:#1565c0}.cxs-3954183383{font-size:24px}.cxs-3377994344{}.cxs-4066908388{clear:both}.cxs-799160745{font-size:48px}.cxs-3147789143{margin-left:-16px;margin-right:-16px}.cxs-1227374908{}.cxs-1227374908:hover{}.cxs-3102244317{}.cxs-3102244317 h1{font-weight:600;line-height:1.25;font-size:48px;margin-top:32px;margin-bottom:8px}.cxs-3102244317 h1 h0{}.cxs-3102244317 h1 h1{}.cxs-3102244317 h1 h2{}.cxs-3102244317 h1 h3{}.cxs-3102244317 h1 h4{}.cxs-3102244317 h1 h5{}.cxs-3102244317 h1 h6{}.cxs-3102244317 h2{font-weight:600;line-height:1.25;font-size:24px;margin-top:32px;margin-bottom:8px}.cxs-3102244317 h2 h0{}.cxs-3102244317 h2 h1{}.cxs-3102244317 h2 h2{}.cxs-3102244317 h2 h3{}.cxs-3102244317 h2 h4{}.cxs-3102244317 h2 h5{}.cxs-3102244317 h2 h6{}.cxs-3102244317 h3{font-weight:600;line-height:1.25;font-size:20px;margin-top:32px;margin-bottom:8px}.cxs-3102244317 h3 h0{}.cxs-3102244317 h3 h1{}.cxs-3102244317 h3 h2{}.cxs-3102244317 h3 h3{}.cxs-3102244317 h3 h4{}.cxs-3102244317 h3 h5{}.cxs-3102244317 h3 h6{}.cxs-3102244317 h4{font-weight:600;line-height:1.25;font-size:16px;margin-top:32px;margin-bottom:8px}.cxs-3102244317 h4 h0{}.cxs-3102244317 h4 h1{}.cxs-3102244317 h4 h2{}.cxs-3102244317 h4 h3{}.cxs-3102244317 h4 h4{}.cxs-3102244317 h4 h5{}.cxs-3102244317 h4 h6{}.cxs-3102244317 h5{font-weight:600;line-height:1.25;font-size:14px;margin-top:32px;margin-bottom:8px}.cxs-3102244317 h5 h0{}.cxs-3102244317 h5 h1{}.cxs-3102244317 h5 h2{}.cxs-3102244317 h5 h3{}.cxs-3102244317 h5 h4{}.cxs-3102244317 h5 h5{}.cxs-3102244317 h5 h6{}.cxs-3102244317 h6{font-weight:600;line-height:1.25;font-size:12px;margin-top:32px;margin-bottom:8px}.cxs-3102244317 h6 h0{}.cxs-3102244317 h6 h1{}.cxs-3102244317 h6 h2{}.cxs-3102244317 h6 h3{}.cxs-3102244317 h6 h4{}.cxs-3102244317 h6 h5{}.cxs-3102244317 h6 h6{}.cxs-3102244317 p{overflow-x:auto;margin-top:0px;margin-bottom:16px}.cxs-3102244317 code{font-family:Menlo, monospace;font-size:14px;padding:4px;background-color:#eee;border-radius:2px}.cxs-3102244317 pre{font-family:Menlo, monospace;font-size:14px;overflow-x:auto;padding:16px;margin-top:8px;margin-bottom:32px;background-color:#eee;border-radius:2px}.cxs-3102244317 pre .hljs-keyword{color:#08e}.cxs-3102244317 pre .hljs-built_in{color:#0e8}.cxs-3102244317 pre .hljs-type{color:#0e8}.cxs-3102244317 pre .hljs-literal{color:#08e}.cxs-3102244317 pre .hljs-number{color:#e08}.cxs-3102244317 pre .hljs-regexp{color:#08e}.cxs-3102244317 pre .hljs-string{color:#0e8}.cxs-3102244317 pre .hljs-subst{color:#0e8}.cxs-3102244317 pre .hljs-symbol{color:#08e}.cxs-3102244317 pre .hljs-class{color:#08e}.cxs-3102244317 pre .hljs-function{color:#e08}.cxs-3102244317 pre .hljs-title{color:#08e}.cxs-3102244317 pre .hljs-params{color:#0e8}.cxs-3102244317 pre .hljs-comment{color:#0e8}.cxs-3102244317 pre .hljs-doctag{color:#0e8}.cxs-3102244317 pre .hljs-meta{color:#0e8}.cxs-3102244317 pre .hljs-meta-keyword{color:#08e}.cxs-3102244317 pre .hljs-meta-string{color:#08e}.cxs-3102244317 hr{margin-top:48px;margin-bottom:48px;border:0px;border-bottom-style:solid;border-bottom-width:1px;border-bottom:2px solid #ddd}.cxs-3102244317 table{border-collapse:separate;border-spacing:0px;max-width:100%;width:100%}.cxs-3102244317 th{text-align:left;line-height:inherit;vertical-align:bottom}.cxs-3102244317 td{vertical-align:top;line-height:inherit}.cxs-3102244317 img{max-width: 100%;height: auto;margin-top:16px;margin-bottom:16px}.cxs-3102244317 a{color:#08e;text-decoration: none}.cxs-3102244317 a:hover{text-decoration:underline}.cxs-3102244317 ul{padding-left:32px;margin-top:0px;margin-bottom:16px}.cxs-2262331773{font-size:20px}.cxs-3759173635{font-size:14px}.cxs-424651569{font-size:20px}.cxs-3075267555 ul{padding-left:32px;margin-top:0px;margin-bottom:16px}.cxs-1246195080{margin-left:-8px;margin-right:-8px}.cxs-3057891252{font-size:14px}.cxs-3057891252 h1{font-size:inherit;margin-top:32px}.cxs-3057891252 h1:before{content:"# ";color:#888}.cxs-3057891252 h2{font-size:inherit;margin-top:32px}.cxs-3057891252 h2:before{content:"## ";color:#888}.cxs-3057891252 h3{font-size:inherit}.cxs-3057891252 h3:before{content:"### ";color:#888}.cxs-3057891252 h4{font-size:16px}.cxs-3057891252 h5{font-size:14px}.cxs-3057891252 h6{font-size:12px}.cxs-3057891252 p{overflow-x:auto}.cxs-3057891252 code{font-family:inherit;font-size:inherit;overflow-x:auto;color:#666}.cxs-3057891252 code:before{content:"`"}.cxs-3057891252 code:after{content:"`"}.cxs-3057891252 pre{font-family:inherit;font-size:inherit;overflow-x:auto;color:#666}.cxs-3057891252 pre:before{content:"```";display:block}.cxs-3057891252 pre:after{content:"```";display:block}.cxs-3057891252 pre .hljs-keyword{color:#666}.cxs-3057891252 pre .hljs-built_in{color:#888}.cxs-3057891252 pre .hljs-type{color:#888}.cxs-3057891252 pre .hljs-literal{color:#666}.cxs-3057891252 pre .hljs-number{color:#1f80ff}.cxs-3057891252 pre .hljs-regexp{color:#666}.cxs-3057891252 pre .hljs-string{color:#888}.cxs-3057891252 pre .hljs-subst{color:#888}.cxs-3057891252 pre .hljs-symbol{color:#666}.cxs-3057891252 pre .hljs-class{color:#666}.cxs-3057891252 pre .hljs-function{color:#1f80ff}.cxs-3057891252 pre .hljs-title{color:#666}.cxs-3057891252 pre .hljs-params{color:#888}.cxs-3057891252 pre .hljs-comment{color:#888}.cxs-3057891252 pre .hljs-doctag{color:#888}.cxs-3057891252 pre .hljs-meta{color:#888}.cxs-3057891252 pre .hljs-meta-keyword{color:#666}.cxs-3057891252 pre .hljs-meta-string{color:#666}.cxs-3057891252 hr{margin-top:48px;margin-bottom:48px;border:0px;border-bottom-style:solid;border-bottom-width:1px}.cxs-3057891252 table{border-collapse:separate;border-spacing:0px;max-width:100%;width:100%}.cxs-3057891252 th{text-align:left;line-height:inherit;vertical-align:bottom}.cxs-3057891252 td{vertical-align:top;line-height:inherit}.cxs-3057891252 img{max-width: 100%;height: auto;margin-top:16px;margin-bottom:16px}.cxs-3057891252 a{color:inherit}.cxs-3057891252 ul{list-style-type:none;padding-left:0px}.cxs-3057891252 li{}.cxs-3057891252 li:before{content:"- "}.cxs-3057891252 b{}.cxs-3057891252 b:before{content:"*"}.cxs-3057891252 b:after{content:"*"}.cxs-3057891252 pre code{}.cxs-3057891252 pre code:before{content:none}.cxs-3057891252 pre code:after{content:none}.cxs-183745076{}.cxs-183745076 h1{font-weight:500;letter-spacing:-0.01em;font-size:48px;margin-top:32px;margin-bottom:8px}.cxs-183745076 h2{font-weight:500;letter-spacing:-0.01em;font-size:24px;margin-top:32px;margin-bottom:8px}.cxs-183745076 h3{font-weight:500;letter-spacing:-0.01em;font-size:20px;margin-top:32px;margin-bottom:8px}.cxs-183745076 h4{font-weight:500;letter-spacing:-0.01em;font-size:16px;margin-top:32px;margin-bottom:8px}.cxs-183745076 h5{font-weight:500;letter-spacing:-0.01em;font-size:14px;margin-top:32px;margin-bottom:8px}.cxs-183745076 h6{font-weight:500;letter-spacing:-0.01em;font-size:12px;margin-top:32px;margin-bottom:8px}.cxs-183745076 p{overflow-x:auto;margin-top:0px;margin-bottom:16px}.cxs-183745076 code{font-family:Menlo, monospace;font-size:14px;padding:4px;background-color:#f5f5f5;border-radius:2px}.cxs-183745076 pre{font-family:Menlo, monospace;font-size:14px;overflow-x:auto;padding:16px;margin-top:8px;margin-bottom:32px;background-color:#f5f5f5;border-radius:2px}.cxs-183745076 pre .hljs-keyword{color:#2196f3}.cxs-183745076 pre .hljs-built_in{color:#1565c0}.cxs-183745076 pre .hljs-type{color:#1565c0}.cxs-183745076 pre .hljs-literal{color:#2196f3}.cxs-183745076 pre .hljs-number{color:#ff4081}.cxs-183745076 pre .hljs-regexp{color:#2196f3}.cxs-183745076 pre .hljs-string{color:#1565c0}.cxs-183745076 pre .hljs-subst{color:#1565c0}.cxs-183745076 pre .hljs-symbol{color:#2196f3}.cxs-183745076 pre .hljs-class{color:#2196f3}.cxs-183745076 pre .hljs-function{color:#ff4081}.cxs-183745076 pre .hljs-title{color:#2196f3}.cxs-3075267555 a:hover{color:#0099e0}.cxs-183745076 pre .hljs-comment{color:#1565c0}.cxs-183745076 pre .hljs-doctag{color:#1565c0}.cxs-183745076 pre .hljs-meta{color:#1565c0}.cxs-183745076 pre .hljs-meta-keyword{color:#2196f3}.cxs-183745076 pre .hljs-meta-string{color:#2196f3}.cxs-183745076 hr{margin-top:48px;margin-bottom:48px;border:0px;border-bottom-style:solid;border-bottom-width:1px;border-bottom:2px solid #e0e0e0}.cxs-183745076 table{border-collapse:separate;border-spacing:0px;max-width:100%;width:100%}.cxs-183745076 th{text-align:left;line-height:inherit;vertical-align:bottom}.cxs-183745076 td{vertical-align:top;line-height:inherit}.cxs-183745076 img{max-width: 100%;height: auto;margin-top:16px;margin-bottom:16px}.cxs-183745076 a{color:#2196f3;text-decoration: none}.cxs-183745076 a:hover{text-decoration:underline}.cxs-183745076 ul{padding-left:32px;margin-top:0px;margin-bottom:16px}.cxs-857983649{}.cxs-857983649 h1{font-weight:700;letter-spacing:-0.01em;font-size:24px;margin-top:48px;margin-bottom:48px;border-bottom-width:4px;border-bottom-style:solid}.cxs-3075267555 a{color:inherit}.cxs-857983649 h2{font-weight:700;letter-spacing:-0.01em;font-size:24px;margin-top:48px;margin-bottom:48px;border-bottom-width:4px;border-bottom-style:solid}.cxs-3075267555 img{max-width: 100%;height: auto;margin-top:16px;margin-bottom:16px}.cxs-857983649 h3{font-weight:700;letter-spacing:-0.01em;font-size:20px;margin-top:48px;margin-bottom:48px;border-bottom-width:2px;border-bottom-style:solid}.cxs-3075267555 td{vertical-align:top;line-height:inherit}.cxs-857983649 h4{font-weight:700;letter-spacing:-0.01em;font-size:20px;margin-top:32px;margin-bottom:8px}.cxs-857983649 h5{font-weight:700;letter-spacing:-0.01em;font-size:20px;margin-top:32px;margin-bottom:8px}.cxs-857983649 h6{font-weight:700;letter-spacing:-0.01em;font-size:20px;margin-top:32px;margin-bottom:8px}.cxs-857983649 p{overflow-x:auto;max-width:40em;margin-top:0px;margin-bottom:16px}.cxs-857983649 code{font-family:Menlo, monospace;font-size:14px;color:#05a}.cxs-857983649 pre{font-family:Menlo, monospace;font-size:14px;overflow-x:auto;padding-top:16px;padding-bottom:16px;margin-top:32px;margin-bottom:32px;border-top:1px solid;border-bottom:1px solid}.cxs-857983649 pre .hljs-keyword{color:#05a}.cxs-857983649 pre .hljs-built_in{color:#444}.cxs-857983649 pre .hljs-type{color:#444}.cxs-857983649 pre .hljs-literal{color:#05a}.cxs-857983649 pre .hljs-number{color:#f30}.cxs-857983649 pre .hljs-regexp{color:#05a}.cxs-857983649 pre .hljs-string{color:#444}.cxs-857983649 pre .hljs-subst{color:#444}.cxs-857983649 pre .hljs-symbol{color:#05a}.cxs-857983649 pre .hljs-class{color:#05a}.cxs-857983649 pre .hljs-function{color:#f30}.cxs-857983649 pre .hljs-title{color:#05a}.cxs-857983649 pre .hljs-params{color:#444}.cxs-857983649 pre .hljs-comment{color:#444}.cxs-857983649 pre .hljs-doctag{color:#444}.cxs-857983649 pre .hljs-meta{color:#444}.cxs-857983649 pre .hljs-meta-keyword{color:#05a}.cxs-857983649 pre .hljs-meta-string{color:#05a}.cxs-857983649 hr{margin-top:48px;margin-bottom:48px;border:0px;border-bottom:2px solid}.cxs-857983649 table{border-collapse:separate;border-spacing:0px;max-width:100%;width:100%}.cxs-857983649 th{text-align:left;line-height:inherit;vertical-align:bottom}.cxs-857983649 td{vertical-align:top;line-height:inherit}.cxs-857983649 img{max-width: 100%;height: auto;margin-top:16px;margin-bottom:16px}.cxs-857983649 a{color:#05a}.cxs-857983649 a:hover{text-decoration:underline}.cxs-857983649 ul{list-style:square inside;padding-left:0px;margin-top:0px;margin-bottom:32px}.cxs-291348840{font-size:20px;line-height:1.625}.cxs-291348840 h1{font-weight:400;text-transform:uppercase;letter-spacing:0.1em;font-size:48px;margin-top:48px;margin-bottom:8px}.cxs-291348840 h2{font-weight:400;text-transform:uppercase;letter-spacing:0.1em;font-size:24px;margin-top:48px;margin-bottom:8px}.cxs-291348840 h3{font-weight:400;text-transform:uppercase;letter-spacing:0.1em;font-size:20px;margin-top:48px;margin-bottom:8px}.cxs-291348840 h4{font-weight:400;text-transform:uppercase;letter-spacing:0.1em;font-size:16px;margin-top:32px;margin-bottom:8px}.cxs-291348840 h5{font-weight:400;text-transform:uppercase;letter-spacing:0.1em;font-size:14px;margin-top:32px;margin-bottom:8px}.cxs-291348840 h6{font-weight:400;text-transform:uppercase;letter-spacing:0.1em;font-size:12px;margin-top:32px;margin-bottom:8px}.cxs-291348840 p{overflow-x:auto;font-size:20px;margin-top:0px;margin-bottom:16px}.cxs-291348840 code{font-family:Menlo, monospace;font-size:14px;color:#005499}.cxs-291348840 pre{font-family:Menlo, monospace;font-size:14px;overflow-x:auto;padding-left:16px;margin-top:8px;margin-bottom:32px;border-left:2px solid #ddd}.cxs-291348840 pre .hljs-keyword{color:#ee5544}.cxs-291348840 pre .hljs-built_in{color:#005499}.cxs-291348840 pre .hljs-type{color:#005499}.cxs-291348840 pre .hljs-literal{color:#ee5544}.cxs-291348840 pre .hljs-number{color:#00bd78}.cxs-291348840 pre .hljs-regexp{color:#ee5544}.cxs-291348840 pre .hljs-string{color:#005499}.cxs-291348840 pre .hljs-subst{color:#005499}.cxs-291348840 pre .hljs-symbol{color:#ee5544}.cxs-291348840 pre .hljs-class{color:#ee5544}.cxs-291348840 pre .hljs-function{color:#00bd78}.cxs-291348840 pre .hljs-title{color:#ee5544}.cxs-291348840 pre .hljs-params{color:#005499}.cxs-291348840 pre .hljs-comment{color:#005499}.cxs-291348840 pre .hljs-doctag{color:#005499}.cxs-291348840 pre .hljs-meta{color:#005499}.cxs-291348840 pre .hljs-meta-keyword{color:#ee5544}.cxs-291348840 pre .hljs-meta-string{color:#ee5544}.cxs-291348840 hr{margin-top:48px;margin-bottom:48px;border:0px;border-bottom:2px solid #ddd}.cxs-291348840 table{border-collapse:separate;border-spacing:0px;max-width:100%;width:100%}.cxs-291348840 th{text-align:left;line-height:inherit;vertical-align:bottom}.cxs-291348840 td{vertical-align:top;line-height:inherit}.cxs-291348840 img{max-width: 100%;height: auto;margin-top:16px;margin-bottom:16px}.cxs-291348840 a{color:inherit}.cxs-291348840 a:hover{color:#ee5544}.cxs-291348840 ul{padding-left:32px;margin-top:0px;margin-bottom:16px}.cxs-2947628758{}.cxs-2947628758 h1{font-weight:600;line-height:1.25;font-size:48px;margin-top:32px;margin-bottom:8px}.cxs-2947628758 h2{font-weight:600;line-height:1.25;font-size:24px;margin-top:32px;margin-bottom:8px}.cxs-2947628758 h3{font-weight:600;line-height:1.25;font-size:20px;margin-top:32px;margin-bottom:8px}.cxs-2947628758 h4{font-weight:600;line-height:1.25;font-size:16px;margin-top:32px;margin-bottom:8px}.cxs-2947628758 h5{font-weight:600;line-height:1.25;font-size:14px;margin-top:32px;margin-bottom:8px}.cxs-2947628758 h6{font-weight:600;line-height:1.25;font-size:12px;margin-top:32px;margin-bottom:8px}.cxs-2947628758 p{overflow-x:auto;margin-top:0px;margin-bottom:16px}.cxs-2947628758 code{font-family:Menlo, monospace;font-size:14px;padding:4px;background-color:#eee;border-radius:2px}.cxs-2947628758 pre{font-family:Menlo, monospace;font-size:14px;overflow-x:auto;padding:16px;margin-top:8px;margin-bottom:32px;background-color:#eee;border-radius:2px}.cxs-2947628758 pre .hljs-keyword{color:#08e}.cxs-2947628758 pre .hljs-built_in{color:#059}.cxs-2947628758 pre .hljs-type{color:#059}.cxs-2947628758 pre .hljs-literal{color:#08e}.cxs-2947628758 pre .hljs-number{color:#e08}.cxs-2947628758 pre .hljs-regexp{color:#08e}.cxs-2947628758 pre .hljs-string{color:#059}.cxs-2947628758 pre .hljs-subst{color:#059}.cxs-2947628758 pre .hljs-symbol{color:#08e}.cxs-2947628758 pre .hljs-class{color:#08e}.cxs-2947628758 pre .hljs-function{color:#e08}.cxs-2947628758 pre .hljs-title{color:#08e}.cxs-2947628758 pre .hljs-params{color:#059}.cxs-2947628758 pre .hljs-comment{color:#059}.cxs-2947628758 pre .hljs-doctag{color:#059}.cxs-2947628758 pre .hljs-meta{color:#059}.cxs-2947628758 pre .hljs-meta-keyword{color:#08e}.cxs-2947628758 pre .hljs-meta-string{color:#08e}.cxs-2947628758 hr{margin-top:48px;margin-bottom:48px;border:0px;border-bottom-style:solid;border-bottom-width:1px;border-bottom:2px solid #ddd}.cxs-2947628758 table{border-collapse:separate;border-spacing:0px;max-width:100%;width:100%}.cxs-2947628758 th{text-align:left;line-height:inherit;vertical-align:bottom}.cxs-2947628758 td{vertical-align:top;line-height:inherit}.cxs-2947628758 img{max-width: 100%;height: auto;margin-top:16px;margin-bottom:16px}.cxs-2947628758 a{color:#08e;text-decoration: none}.cxs-2947628758 a:hover{text-decoration:underline}.cxs-2947628758 ul{padding-left:32px;margin-top:0px;margin-bottom:16px}.cxs-3075267555{font-size:20px;line-height:1.625}.cxs-3075267555 h1{font-weight:600;letter-spacing:0.1em;font-size:48px;margin-top:48px;margin-bottom:8px}.cxs-3075267555 h2{font-weight:600;letter-spacing:0.1em;font-size:24px;margin-top:48px;margin-bottom:8px}.cxs-3075267555 h3{font-weight:600;letter-spacing:0.1em;font-size:20px;margin-top:48px;margin-bottom:8px}.cxs-3075267555 h4{font-weight:600;letter-spacing:0.1em;font-size:16px;margin-top:32px;margin-bottom:8px}.cxs-3075267555 h5{font-weight:600;letter-spacing:0.1em;font-size:14px;margin-top:32px;margin-bottom:8px}.cxs-3075267555 h6{font-weight:600;letter-spacing:0.1em;font-size:12px;margin-top:32px;margin-bottom:8px}.cxs-3075267555 p{overflow-x:auto;font-size:20px;margin-top:0px;margin-bottom:16px}.cxs-3075267555 code{font-family:Menlo, monospace;font-size:14px;color:#ab61ff}.cxs-3075267555 pre{font-family:Menlo, monospace;font-size:14px;overflow-x:auto;padding-left:16px;margin-top:8px;margin-bottom:32px;border-left:2px solid #ccd}.cxs-3075267555 pre .hljs-keyword{color:#0099e0}.cxs-3075267555 pre .hljs-built_in{color:#ab61ff}.cxs-3075267555 pre .hljs-type{color:#ab61ff}.cxs-3075267555 pre .hljs-literal{color:#0099e0}.cxs-3075267555 pre .hljs-number{color:#f7b}.cxs-3075267555 pre .hljs-regexp{color:#0099e0}.cxs-3075267555 pre .hljs-string{color:#ab61ff}.cxs-3075267555 pre .hljs-subst{color:#ab61ff}.cxs-3075267555 pre .hljs-symbol{color:#0099e0}.cxs-3075267555 pre .hljs-class{color:#0099e0}.cxs-3075267555 pre .hljs-function{color:#f7b}.cxs-3075267555 pre .hljs-title{color:#0099e0}.cxs-3075267555 pre .hljs-params{color:#ab61ff}.cxs-3075267555 pre .hljs-comment{color:#ab61ff}.cxs-3075267555 pre .hljs-doctag{color:#ab61ff}.cxs-3075267555 pre .hljs-meta{color:#ab61ff}.cxs-3075267555 pre .hljs-meta-keyword{color:#0099e0}.cxs-3075267555 pre .hljs-meta-string{color:#0099e0}.cxs-3075267555 hr{margin-top:48px;margin-bottom:48px;border:0px;border-bottom:2px solid #ccd}.cxs-3075267555 table{border-collapse:separate;border-spacing:0px;max-width:100%;width:100%}.cxs-3075267555 th{text-align:left;line-height:inherit;vertical-align:bottom}.cxs-3377994344:hover{box-shadow:inset 0 0 0 999px rgba(0, 0, 0, .125)}@media screen and (min-width:52em) { .cxs-857983649 h3{font-size:24px} }@media screen and (min-width:52em) { .cxs-857983649 h2{font-size:48px} }@media screen and (min-width:52em) { .cxs-857983649 h1{font-size:48px} }@media screen and (min-width: 52em) { .cxs-799160745{font-size:72px} }@media screen and (min-width: 52em) { .cxs-424651569{} }@media screen and (min-width: 52em) { .cxs-2262331773{font-size:32px} }@media screen and (min-width: 52em) { .cxs-3759173635{} }@media screen and (min-width: 52em) { .cxs-3954183383{} }</style></head><body style="margin:0;"><div class="Xv" style="font-family:-apple-system, BlinkMacSystemFont, sans-serif;font-weight:400;line-height:1.5;color:#111;background-color:#fff;"><nav style="display:flex;align-items:center;padding-top:8px;padding-bottom:8px;padding-left:16px;padding-right:16px;background-color:#fff;"><a href="https://github.com/grncdr/node-any-db-adapter-spec" class="Link" style="box-sizing:border-box;color:inherit;display:inline-block;font-size:14px;line-height:16px;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom:16px;font-weight:600;text-decoration:none;">GitHub</a><a href="https://npmjs.com/package/any-db-adapter-spec" class="Link" style="box-sizing:border-box;color:inherit;display:inline-block;font-size:14px;line-height:16px;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom:16px;font-weight:600;text-decoration:none;">npm</a></nav><header class="BannerHeader" style="display:flex;align-items:center;justify-content:center;text-align:left;min-height:100vh;color:white;background-color:#111;background-image:url(undefined);background-size:cover;background-position:center;"><div style="box-sizing:border-box;width:100%;max-width:1024px;margin-left:auto;margin-right:auto;padding-top:48px;padding-bottom:48px;padding-left:32px;padding-right:32px;"><h1 class="cxs-799160745" style="box-sizing:border-box;font-weight:600;line-height:1.25;margin:0;">any-db adapter spec</h1><h2 class="cxs-3954183383" style="box-sizing:border-box;font-weight:600;line-height:1.25;margin:0;">Specification and test suite for any-db database adapters</h2><p class="Text" style="box-sizing:border-box;font-size:20px;margin:0;">v2.1.2</p><div class="cxs-1246195080" style="box-sizing:border-box;padding-top:16px;padding-bottom:16px;"><iframe src="https://platform.twitter.com/widgets/tweet_button.html?text=node-any-db-adapter-spec%3A%20Specification%20and%20test%20suite%20for%20any-db%20database%20adapters&amp;url=&amp;via=&amp;hashtags=&amp;size=" height="20" allowtransparency="true" frameborder="0" scrolling="no" style="box-sizing:border-box;width:61px;overflow:hidden;margin:8px;"></iframe><iframe src="https://ghbtns.com/github-btn.html?type=star&amp;count=true&amp;user=grncdr&amp;repo=node-any-db-adapter-spec&amp;size=" height="20" frameborder="0" scrolling="no" style="box-sizing:border-box;width:100px;overflow:hidden;margin:8px;"></iframe><div class="cxs-4066908388 cxs-display-table"></div></div></div></header><div class="cxs-2947628758" style="box-sizing:border-box;max-width:1024px;margin-left:auto;margin-right:auto;padding-top:32px;padding-bottom:32px;padding-left:32px;padding-right:32px;"><article style="box-sizing:border-box;"><div><h1>Any-DB API</h1>
+<p>This repo specifies the API that must be implemented by an Any-DB adapter. The
+API is described in this README using <a href="https://github.com/jden/jsig">jsig</a> and prose, and the
+<a href="tests">test suite</a> can be used by adapter implementations to ensure they conform.</p>
+<p>Because this documentation is primarily intended for end-users of Any-DB, it
+begins by describing the objects an adapter must create. The final section
+describes the exact API for creating these objects that an adapter must
+implement.</p>
+<h2>Interfaces</h2>
+<ul>
+<li><a href="#queryable">Queryable</a> - a common interface implemented by connections, pools, and
+transactions.</li>
+<li><a href="#connection">Connection</a> - the &quot;transport&quot; responsible for getting SQL queries to a
+database, and streaming results back through a <code>Query</code> instance.</li>
+<li><a href="#query">Query</a> - a <a href="http://nodejs.org/api/stream.html#stream_class_stream_readable">Readable</a> stream that emits row objects.</li>
+</ul>
+<h2>Callbacks</h2>
+<p>All callbacks used by the API follow convention used in node.js, where first
+parameter is an error (or null) and other parameters (if any) depend on use
+case.</p>
+<pre><span class="hljs-keyword">type</span> <span class="hljs-type">Continuation</span>&lt;<span class="hljs-type">T</span>&gt; : (<span class="hljs-type">Error</span> | null, <span class="hljs-type">T</span>) =&gt; void</pre><h2>Queryable</h2>
+<pre><span class="hljs-type">Queryable</span> := <span class="hljs-type">EventEmitter</span> &amp; {
+  adapter: <span class="hljs-type">Adapter</span>
+  query:   (text: <span class="hljs-type">String</span>, params?: <span class="hljs-type">Array</span>, <span class="hljs-type">Continuation</span>&lt;<span class="hljs-type">ResultSet</span>&gt;?) =&gt; <span class="hljs-type">Query</span>
+  query:   (<span class="hljs-type">Query</span>) =&gt; <span class="hljs-type">Query</span>
+}</pre><p>Known implementations:</p>
+<ul>
+<li><a href="#connection">Connection</a></li>
+<li><a href="https://github.com/grncdr/node-any-db-pool#api">ConnectionPool</a> (external)</li>
+<li><a href="https://github.com/grncdr/node-any-db-transaction#api">Transaction</a> (external).</li>
+</ul>
+<h3>Queryable.adapter</h3>
+<p>The <a href="#adapter">Adapter</a> instance that will be used by this <code>Queryable</code> for creating
+<a href="#query">Query</a> instances and/or connections.</p>
+<h3>Queryable.query</h3>
+<pre>(text: <span class="hljs-type">String</span>, params?: <span class="hljs-type">Array</span>, <span class="hljs-type">Continuation</span>&lt;<span class="hljs-type">ResultSet</span>&gt;?) =&gt; <span class="hljs-type">Query</span>
+(<span class="hljs-type">Query</span>) =&gt; <span class="hljs-type">Query</span></pre><p>Execute a SQL statement using bound parameters (if they are provided) and
+return a <a href="#query">Query</a> object that is a <a href="http://nodejs.org/api/stream.html#stream_class_stream_readable">Readable</a> stream of the resulting
+rows. If a <code>Continuation&lt;ResultSet&gt;</code> is provided the rows returned by the
+database will be aggregated into a [ResultSet][] which will be passed to the
+continuation after the query has completed.</p>
+<p>The second form is not needed for normal use, but must be implemented by
+adapters to work correctly with <a href="https://github.com/grncdr/node-any-db-pool#api">ConnectionPool</a> and <a href="https://github.com/grncdr/node-any-db-transaction#api">Transaction</a>. See
+<a href="#adapter-createquery">Adapter.createQuery</a> for more details.</p>
+<p><em>Callback-style</em></p>
+<pre>queryable.query(<span class="hljs-string">'SELECT * FROM my_table'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{
+  <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.error(err)
+  res.rows.forEach(<span class="hljs-built_in">console</span>.log)
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'All done!'</span>)
+})</pre><p><em>Stream-style</em></p>
+<pre>queryable.query(<span class="hljs-string">'SELECT * FROM my_table'</span>)
+  .on(<span class="hljs-string">'error'</span>, <span class="hljs-built_in">console</span>.error)
+  .on(<span class="hljs-string">'data'</span>, <span class="hljs-built_in">console</span>.log)
+  .on(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'All done!'</span>) })</pre><h3>Queryable events</h3>
+<h4>Query event</h4>
+<p>The <code>'query'</code> event is emitted immediately before a query is executed.</p>
+<p>One argument is passed to event handlers:</p>
+<ul>
+<li><code>query</code> - a <a href="#query">Query</a> object</li>
+</ul>
+<h2>Connection</h2>
+<pre><span class="hljs-type">Connection</span> := <span class="hljs-type">Queryable</span> &amp; {
+  <span class="hljs-keyword">end</span>: (<span class="hljs-type">Continuation</span>&lt;void&gt;?) =&gt; void
+}</pre><p>Known implementations:</p>
+<ul>
+<li><a href="https://github.com/grncdr/node-any-db-mysql">any-db-mysql</a> (external)</li>
+<li><a href="https://github.com/grncdr/node-any-db-postgres">any-db-postgres</a> (external)</li>
+<li><a href="https://github.com/grncdr/node-any-db-sqlite3">any-db-sqlite3</a> (external)</li>
+</ul>
+<p>Connection objects are obtained using <a href="https://github.com/grncdr/node-any-db#exportscreateconnection">createConnection</a> from <a href="https://github.com/grncdr/node-any-db">Any-DB</a> or
+<a href="https://github.com/grncdr/node-any-db-pool#connectionpoolacquire">ConnectionPool.acquire</a>, both of which delegate to the
+<a href="#adaptercreateconnection">createConnection</a> implementation of the specified
+adapter.</p>
+<p>While all <code>Connection</code> objects implement the <a href="#queryable">Queryable</a> interface, the
+implementations in each adapter may add additional methods or emit additional
+events. If you need to access a feature of your database that is not described
+here (such as Postgres' server-side prepared statements), consult the
+documentation for your adapter.</p>
+<h3>Connection.end</h3>
+<p><code>(Continuation&lt;void&gt;) =&gt; void</code></p>
+<p>Close the database connection. If a continuation is provided it will be
+called after the connection has closed.</p>
+<h3>Connection Events</h3>
+<h4>Error event</h4>
+<p>The <code>'error'</code> event is emitted when there is a connection-level error.</p>
+<p>No arguments are passed to event listeners.</p>
+<h4>Open event</h4>
+<p>The <code>'open'</code> event is emitted when the connection has been established and is
+ready to query.</p>
+<p>No arguments are passed to event listeners.</p>
+<h4>Close event</h4>
+<p>The <code>'close'</code> event is emitted when the connection has been closed.</p>
+<p>No arguments are passed to event listeners.</p>
+<h2>Query</h2>
+<pre>Query := Readable&lt;Object&gt; &amp; {
+  text: String,
+  values?: Array,
+  callback?: Continuation&lt;ResultSet&gt;
+}</pre><p><code>Query</code> objects are returned by the <a href="#queryablequery">Queryable.query</a> method,
+available on <a href="#connection">connections</a>, <a href="https://github.com/grncdr/node-any-db-pool#connectionpoolquery">pools</a>, and
+<a href="https://github.com/grncdr/node-any-db-transaction#transactionquery">transactions</a>. Queries are instances of <a href="http://nodejs.org/api/stream.html#stream_class_stream_readable">Readable</a>, and 
+as such can be <a href="http://nodejs.org/api/stream.html#stream_readable_pipe_destination_options">piped</a> through transforms and support backpressure
+for more efficient memory-usage on very large results sets. (Note: at this time
+the <code>sqlite3</code> driver does not support backpressure)</p>
+<p>Internally, <code>Query</code> instances are
+<a href="#adaptercreatequery">created by a database Adapter</a> and may have more methods,
+properties, and events than are described here. Consult the documentation for
+your specific adapter to find out about any extensions.</p>
+<h3>Query.text</h3>
+<p>The SQL query as a string. If you are using MySQL this will contain
+interpolated values <em>after</em> the query has been enqueued by a connection.</p>
+<h3>Query.values</h3>
+<p>The array of parameter values.</p>
+<h3>Query.callback</h3>
+<p>The callback (if any) that was provided to <a href="#queryablequery">Queryable.query</a>.
+Note that <code>Query</code> objects <strong>must not</strong> use a closed over reference to their
+callback, as other <code>any-db</code> libraries <em>may</em> rely on modifying the <code>callback</code>
+property of a <code>Query</code> they did not create.</p>
+<h3>Query Events</h3>
+<h4>Error event</h4>
+<p>The <code>'error'</code> event is emitted at most once per query. Note that this event will
+be emitted for errors even if a callback was provided, the callback will simply
+be subscribed to the <code>'error'</code> event.</p>
+<p>One argument is passed to event listeners:</p>
+<ul>
+<li><code>error</code> - the error object.</li>
+</ul>
+<h4>Fields event</h4>
+<p>A <code>'fields'</code> event is emmitted before any <code>'data'</code> events.</p>
+<p>One argument is passed to event listeners:</p>
+<ul>
+<li><code>fields</code> - an array of [Field][ResultSet] objects.</li>
+</ul>
+<h3><a href="http://nodejs.org/api/stream.html#stream_class_stream_readable">Readable</a> events</h3>
+<p>The following events are part of the <a href="http://nodejs.org/api/stream.html#stream_class_stream_readable">Readable</a> interface which is implemented by Query:</p>
+<h4>Data event</h4>
+<p>A <code>'data'</code> event is emitted for each row in the query result set.</p>
+<p>One argument is passed to event listeners:</p>
+<ul>
+<li><code>row</code> contains the contents of a single row in the query result</li>
+</ul>
+<h4>Close event</h4>
+<p>A <code>'close'</code> event is emitted when the query completes.</p>
+<p>No arguments are passed to event listeners.</p>
+<h4>End event</h4>
+<p>An <code>'end'</code> event is emitted after all query results have been consumed.</p>
+<p>No arguments are passed to event listeners.</p>
+<h2>ResultSet</h2>
+<pre>ResultSet := {
+  fields:        Array&lt;Field&gt;
+  rows:          Array&lt;Object&lt;Any&gt;&gt;
+  rowCount:      Integer
+  lastInsertId?: Any
+}
+
+Field := {
+  name: String
+  {* other properties are driver specific *}
+}</pre><p><code>ResultSet</code> objects are just plain data that collect results of a query when a 
+continuation is provided to <a href="#queryablequery">Queryable.query</a>. The <code>lastInsertId</code> is optional,
+and currently supported by <code>sqlite3</code> and <code>mysql</code> but not <code>postgres</code>, because
+it is not supported by Postgres itself.</p>
+<h2>Adapter</h2>
+<pre><span class="hljs-type">Adapter</span>: {
+  name:             <span class="hljs-type">String</span>
+  createConnection: (<span class="hljs-type">Object</span>, <span class="hljs-type">Continuation</span>&lt;<span class="hljs-type">Connection</span>&gt;?) =&gt; <span class="hljs-type">Connection</span>,
+  createQuery:      (<span class="hljs-type">String</span>, <span class="hljs-type">Array</span>?, <span class="hljs-type">Continuation</span>&lt;<span class="hljs-type">ResultSet</span>&gt;?) =&gt; <span class="hljs-type">Query</span>,
+}</pre><p>This section is mostly intended for adapter authors, other users should rarely
+need to interact with this API directly.</p>
+<h3>Adapter.name</h3>
+<p>The string name of the adapter, e.g. <code>'mysql'</code>, <code>'postgres'</code> or <code>'sqlite3'</code>.</p>
+<h3>Adapter.createConnection</h3>
+<p><code>(config: Object, Continuation&lt;Connection&gt;?) =&gt; Connection</code></p>
+<p>Create a new connection object. In common usage, <code>config</code> will be created by
+<a href="https://github.com/grncdr/parse-db-url#api">parse-db-url</a> and passed to the adapter by <a href="https://github.com/grncdr/node-any-db">any-db</a>.</p>
+<p>If a continuation is given, it <strong>must</strong> be called, either with an error or the
+established connection.</p>
+<p>See also: the <a href="#connection">Connection API</a></p>
+<h3>Adapter.createQuery</h3>
+<pre>(text: <span class="hljs-type">String</span>, params?: <span class="hljs-type">Array</span>, <span class="hljs-type">Continuation</span>&lt;<span class="hljs-type">ResultSet</span>&gt;?) =&gt; <span class="hljs-type">Query</span>
+(<span class="hljs-type">Query</span>) =&gt; <span class="hljs-type">Query</span> {* returns same <span class="hljs-type">Query</span> *}</pre><p>Create a <a href="#query">Query</a> that <em>may</em> eventually be executed later on by a
+<a href="#connection">Connection</a>. While this function is rarely needed by user code, it makes
+it possible for <a href="https://github.com/grncdr/node-any-db-pool#connectionpoolquery">ConnectionPool.query</a> and <a href="https://github.com/grncdr/node-any-db-transaction#transactionquery">Transaction.query</a> to fulfill
+the <a href="#queryablequery">Queryable.query</a> contract by synchronously returning a <a href="#query">Query</a> stream.</p>
+<h1>License</h1>
+<p>2-clause BSD</p>
+</div></article></div><footer><div style="box-sizing:border-box;max-width:1024px;margin-left:auto;margin-right:auto;margin-bottom:32px;padding-top:8px;padding-bottom:8px;padding-left:32px;padding-right:32px;"><div style="margin-left:-16px;margin-right:-16px;"><a href="https://github.com/grncdr/node-any-db-adapter-spec" class="Link" style="box-sizing:border-box;color:inherit;display:inline-block;font-size:14px;line-height:16px;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom:16px;font-weight:600;text-decoration:none;">GitHub</a><a href="https://github.com/grncdr" class="Link" style="box-sizing:border-box;color:inherit;display:inline-block;font-size:14px;line-height:16px;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom:16px;font-weight:600;text-decoration:none;">grncdr</a></div><div></div></div></footer></div><div style="font-family:-apple-system, sans-serif;font-size:12px;font-weight:600;text-align:right;padding:24px;color:#333;background-color:#eee;"><a href="http://compositor.io" style="color:inherit;text-decoration:none;">Built with Compositor.io</a></div></body></html>
